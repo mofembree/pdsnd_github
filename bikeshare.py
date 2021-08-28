@@ -231,7 +231,13 @@ def time_stats(df, month, day):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip."""
+    """
+    Displays statistics on the most popular stations and trip.
+        Analyzes three station perspectives
+            1-most common start station
+            2-most common end station
+            3-most common trip (combination of start and end station)
+    """
 
     print('\nCalculating The Most Popular Stations and Trip...\n')
 
@@ -271,7 +277,12 @@ def station_stats(df):
 
 
 def trip_duration_stats(df):
-    """Displays statistics on the total and average trip duration."""
+    """
+    Displays statistics on the total and average trip duration.
+        Analyzed 2 perspectives on travel times
+            1-total travel time for selected city, month, day of week
+            2-average trip travel time for selectd city, month, day of week
+    """
 
     print('\nCalculating Trip Duration...\n')
 
@@ -293,7 +304,13 @@ def trip_duration_stats(df):
 
 
 def user_stats(df,city):
-    """Displays statistics on bikeshare users."""
+    """
+    Displays statistics on bikeshare users.
+        Analyzed 5 types of user data if relevant
+            1-user type count for selected city, month, day of week
+            2-gender count for month, day of week if selected city is Chicago or New York
+            3, 4, 5 - earliest, most recent and most common birth year for month, day of week if selected city is Chicago or New York
+    """
     
     print('\nCalculating User Stats...\n')
     
