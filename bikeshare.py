@@ -329,18 +329,18 @@ def main():
         city, month, day = get_filters()
         df = load_data(city, month, day)
 
-        #give user option to view data 5 rows at a time
+        #give user option to view data 10 rows at a time
         
-        view_five = input('\nWould you like to view 5 lines of sample data? Enter yes or no.\n')
-        more = view_five[0].lower()
+        view_ten = input('\nWould you like to view 10 lines of sample data? Enter yes or no.\n')
+        more = view_ten[0].lower()
         rows_viewed = 0
         while more == 'y':
             
             if more == 'y':
-                rows_viewed += 5
+                rows_viewed += 10
                 data_sample = df.head(rows_viewed)
                 print(data_sample)
-                view_more = input('\nWould you like to add 5 lines to the sample data? Enter yes or no.\n')
+                view_more = input('\nWould you like to add 10 lines to the sample data? Enter yes or no.\n')
                 more = view_more[0].lower()
             else:
                 more = 'n'
