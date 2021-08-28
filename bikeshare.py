@@ -33,7 +33,7 @@ def get_filters():
         city = city_input[0].upper()
         
         if city != "C" and  city != "N" and  city != "W":
-            print("The value you entered is not valid, please try again")
+            print("The value you entered is not valid, please try again.\nWhat city would you like to explore?  Enter \"C\" for Chicago, \"N\" for New York City or \"W\" for Washington:")
         else:
             print("Thank you!  You chose {}!".format(city))
             test = 1
@@ -50,7 +50,7 @@ def get_filters():
         month = month_input[0:3].upper()
         
         if month != "JAN" and month != "FEB" and month != "MAR" and month != "APR" and month != "MAY" and month != "JUN" and month != "ALL":
-            print("The value you entered is not valid, please try again")
+            print("The value you entered is not valid, please try again.\n What month would you like to analyze?  Enter JAN, FEB, MAR, APR, MAY, JUN or ALL:")
         else:    
             print("Thank you!  You chose {}!".format(month))
             test = 1
@@ -67,7 +67,7 @@ def get_filters():
         day_short = day_input[0:3].upper()
         print(day_short)
         if day_short != "MON" and day_short != "TUE" and day_short != "WED" and day_short != "THU" and day_short != "FRI" and day_short != "SAT" and day_short != "SUN" and day_short != "ALL":
-            print("The value you entered is not valid, please try again")
+            print("The value you entered is not valid, please try again.\nWhat day or the week would you like to analyze?  Enter Mon, Tue, Wed, Thu, Fri, Sat, Sun or All:")
         else:    
             if day_short == "MON":
                 day="Monday"
